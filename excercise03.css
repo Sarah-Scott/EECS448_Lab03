@@ -1,0 +1,33 @@
+body
+{
+    background-color: OrangeRed;
+}
+
+h1
+{
+  text-align:center;
+  font-size:300%;
+  color:Aquamarine;
+}
+
+
+p
+{
+  color: LemonChiffon;
+}
+
+a
+{
+    color: MediumBlue;
+}
+
+a:hover
+{
+      font-size:120%;
+      color: DarkBlue;
+}
+
+p.short
+{
+  color: AliceBlue;
+}

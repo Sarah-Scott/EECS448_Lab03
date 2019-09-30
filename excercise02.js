@@ -1,6 +1,11 @@
-var index = 1;
-showImage(index);
 
+var hotties = ["leo.jpg" , "bradley.jpg" , "idris.jpg" , "brad.jpg", "johnny.jpg"];
+
+var index = 0;
+var htmlImage = document.getElementById("viewImage");
+htmlImage.src = hotties[0];
+//showImage(index);
+//
 function changeSlide(n)
 {
   showImage(index += n);
@@ -9,18 +14,17 @@ function changeSlide(n)
 function showImage(n)
 {
   var i;
-  var x = document.getElementsByClassName("hotties");
-  if (n > x.length)
+  if (n >= hotties.length)
   {
-    index = 1;
+    index = 0;
   }
-  if (n < 1)
+  if (n < 0)
   {
-    index = x.length;
+    index = hotties.length - 1;
   }
-  for (i=0; i<x.length;i++)
-  {
-    x[i].style.display = "none";
-  }
-  x[index-1].style.display="block";
+  //for (i=0; i<hotties.length;i++)
+  //{
+  //  htmlImage.src = images[0];
+  //}
+  htmlImage.src = hotties[index];
 }
